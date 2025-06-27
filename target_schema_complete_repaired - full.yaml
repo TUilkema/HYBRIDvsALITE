@@ -1,0 +1,133 @@
+# target_schema_alpha.yaml
+attributes:
+  - id: property_id
+    name: Property ID
+    data_type: string
+    synonyms: ["Property ID", "Property Code", "Property Identifier", "Property ID No."]
+    allowed_null: false
+
+  - id: property_name
+    name: Property Name
+    data_type: string
+    synonyms: ["Building Name", "Asset Name", "Property"]
+    allowed_null: false
+
+  - id: address
+    name: Address
+    data_type: string
+    synonyms: ["Street Address", "Location", "Street"]
+    allowed_null: false
+
+  - id: city
+    name: City
+    data_type: string
+    synonyms: ["Town", "Municipality","Greater Region"]
+    allowed_null: true
+
+  - id: tenant_name
+    name: Tenant Name
+    data_type: string
+    synonyms: ["Tenant", "Lessee", "Company", "Occupier"]
+    allowed_null: true
+
+  - id: floor
+    name: Floor Level
+    data_type: decimal
+    synonyms: ["Floor", "Storey", "Story", "Building Level", "Floor Number", "Verdieping", "Etage"]
+    typical_range: {min: -2, max: 20}
+    mean: 3
+    iqr: {q1: 1, q3: 8}
+    allowed_null: true
+
+  - id: vacant
+    name: Vacant Flag
+    data_type: boolean
+    synonyms: ["Vacant", "Vacancy", "Unoccupied", "Empty"]
+    allowed_null: true
+
+  - id: use_type
+    name: Use Type
+    data_type: string
+    synonyms: ["Use", "Category", "Function", "Tenant Type"]
+    allowed_null: true
+
+  - id: passing_rent_pa
+    name: Passing Rent Per Annum
+    data_type: decimal
+    unit: EUR/year
+    synonyms: ["Passing Rent", "Annual Rent", "Rent PA", "Rent / Year"]
+    typical_range: {min: 10000, max: 10000000}
+    mean: 250000
+    iqr: {q1: 50000, q3: 1000000}
+    allowed_null: true
+
+  - id: start_date
+    name: Start Date
+    data_type: date
+    synonyms: ["Commencement", "Start Lease", "Commencement Date"]
+    typical_range: {min: "1990-01-01", max: "2030-12-31"}
+    allowed_null: true
+
+  - id: break_date
+    name: Break Date
+    data_type: date
+    synonyms: ["Break Option Date", "Earliest Break", "Tenant Break"]
+    typical_range: {min: "1990-01-01", max: "2040-12-31"}
+    allowed_null: true
+
+  - id: expiry_date
+    name: Expiry Date
+    data_type: date
+    synonyms: ["Lease Expiry", "Termination Date", "End Date", "Earliest Expiry Date"]
+    typical_range: {min: "1990-01-01", max: "2045-12-31"}
+    allowed_null: true
+
+  - id: office_area
+    name: Office Area (sqm)
+    data_type: decimal
+    unit: sqm
+    synonyms: ["Office Area", "Office Space", "Office Sqm", "Business Space", "Office/Business"]
+    typical_range: {min: 0, max: 50000}
+    mean: 750
+    iqr: {q1: 100, q3: 3500}
+    allowed_null: true
+
+  - id: archive_storage_area
+    name: Archive / Storage Area (sqm)
+    data_type: decimal
+    unit: sqm
+    synonyms: ["Archive/Storage", "Storage Area", "Archive Area", "Storage Sqm"]
+    typical_range: {min: 0, max: 10000}
+    mean: 200
+    iqr: {q1: 0, q3: 600}
+    allowed_null: true
+
+  - id: retail_area
+    name: Retail Area (sqm)
+    data_type: decimal
+    unit: sqm
+    synonyms: ["Retail Area", "Retail Space", "Retail"]
+    typical_range: {min: 0, max: 20000}
+    mean: 500
+    iqr: {q1: 0, q3: 1000}
+    allowed_null: true
+
+  - id: other_area
+    name: Other Area (sqm)
+    data_type: decimal
+    unit: sqm
+    synonyms: ["Other Area", "Other Space"]
+    typical_range: {min: 0, max: 10000}
+    mean: 300
+    iqr: {q1: 0, q3: 800}
+    allowed_null: true
+
+  - id: parking_spaces
+    name: Parking Spaces (units)
+    data_type: decimal
+    unit: spaces
+    synonyms: ["Parking Spaces", "Parking", "PP", "Spaces","pp"]
+    typical_range: {min: 0, max: 300}
+    mean: 10
+    iqr: {q1: 0, q3: 20}
+    allowed_null: true
