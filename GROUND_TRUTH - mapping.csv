@@ -1,0 +1,117 @@
+FORMAT,RAW_HEADER,TARGET_ATTRIBUTE
+JLL,Tenant,tenant_name
+JLL,Floor,floor
+JLL,Total,omit
+JLL,Office/Business space,office_area
+JLL,Archive,archive_storage_area
+JLL,Restaurant,retail_area
+JLL,pp,parking_spaces
+JLL,Total.1,passing_rent_pa
+JLL,Office+Restaurant,omit
+JLL,Office,omit
+JLL,Archive.1,omit
+JLL,Unnamed: 11,omit
+JLL,Restaurant*,omit
+JLL,Unnamed: 13,omit
+JLL,Parking,omit
+JLL,Unnamed: 15,omit
+JLL,Commencement,start_date
+JLL,Expiry,expiry_date
+JLL,Break,break_date
+JLL,Tenant option(s),omit
+JLL,Notice period,omit
+JLL,Notice given,omit
+JLL,WAULT,omit
+JLL,WAULB,omit
+JLL,first index,omit
+JLL,Yes/No,omit
+JLL,% comp,omit
+JLL,Guarantee,omit
+JLL,comments,omit
+SAVILLS,Property code,property_id
+SAVILLS,Property / Address,address
+SAVILLS,Floor,floor
+SAVILLS,Unit number Savills,omit
+SAVILLS,Tenant,tenant_name
+SAVILLS,Leased space,use_type
+SAVILLS,Office space sq m,office_area
+SAVILLS,Storage space sq m,archive_storage_area
+SAVILLS,"Total Area
+sq m",omit
+SAVILLS,Total rent office space/y,omit
+SAVILLS,"Total annual
+rent",passing_rent_pa
+SAVILLS,Payment period (m/q),omit
+SAVILLS,VAT liable (y/n),omit
+SAVILLS,VAT comp (€),omit
+SAVILLS,Start date lease,start_date
+SAVILLS,Notice period,omit
+SAVILLS,Break option date,break_date
+SAVILLS,Notice period Break option,omit
+SAVILLS,Expiry date,expiry_date
+SAVILLS,Next index date,omit
+SAVILLS,Option period,omit
+SAVILLS,Type of Security,omit
+SAVILLS,Security Amount,omit
+SAVILLS,"CPI Indices (2000=100, 2006=100, 2015=100)",omit
+SAVILLS,Comments,omit
+PARK15,ID,property_id
+PARK15,Address,address
+PARK15,Tenant,tenant_name
+PARK15,Brand,omit
+PARK15,Contractual size (sqm),omit
+PARK15,LFA/GFA,omit
+PARK15,Total size (sqm LFA NEN2580),omit
+PARK15,Start date,start_date
+PARK15,Expiry date,expiry_date
+PARK15,Break date,break_date
+PARK15,WALL (to break),omit
+PARK15,WALL (to expiry),omit
+PARK15,Option periods,omit
+PARK15,Extension periods,omit
+PARK15,Notice periods (months),omit
+PARK15,Total gross annual rent,passing_rent_pa
+PARK15,Next index date,omit
+PARK15,VAT liable,omit
+PARK15,Type,omit
+PARK15,Amount,omit
+PARK15,Terminated lease,omit
+PARK15,Comments,omit
+EDIF,EDIF ID,omit
+EDIF,Property ID No.,property_id
+EDIF,Property Name,property_name
+EDIF,Country,omit
+EDIF,Demise ID No.,omit
+EDIF,Floor,floor
+EDIF,Tenant ID No.,omit
+EDIF,Tenant Name,tenant_name
+EDIF,Use,use_type
+EDIF,NLA (Sqm),office_area
+EDIF,Parking Spaces,parking_spaces
+EDIF,Lease Start Date,start_date
+EDIF,Break Date,break_date
+EDIF,Expiry Date,expiry_date
+EDIF,Earliest Expiry Date,omit
+EDIF,Contracted Rent at Reporting Date (€ psqm pm),omit
+EDIF,Contracted Rent at Reporting Date (€ per unit pm),omit
+EDIF,Contracted Annual Rent (€ pa),omit
+EDIF,TOTAL,passing_rent_pa
+EDIF,"14,50%",omit
+CBRE,Tenant,tenant_name
+CBRE,Floor(s),floor
+CBRE,Office (sq m),office_area
+CBRE,Archive (sq m),archive_storage_area
+CBRE,PP,parking_spaces
+CBRE,Rent office (€/sqm),omit
+CBRE,Rent Archive (€/sqm),omit
+CBRE,Rent PP (€/PP),omit
+CBRE,Annual rent (excl. VAT),omit
+CBRE,VAT compensation,omit
+CBRE,Total annual rent (excl. VAT),passing_rent_pa
+CBRE,VAT,omit
+CBRE,Start date,start_date
+CBRE,Next index,omit
+CBRE,Termination date,expiry_date
+CBRE,Remaining lease term,omit
+CBRE,Notice period,omit
+CBRE,Options/Extensions,omit
